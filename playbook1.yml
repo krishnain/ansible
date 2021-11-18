@@ -1,0 +1,14 @@
+---
+- name: Create user on all managed nodes
+  hosts: dbserver
+  tasks:
+   - name: User creation
+     user:
+      name: Anu
+      password: krishna
+      home: /home/anu
+      uid: 112233
+      shell: /bin/bash
+      comment: "A super user"
+
+...

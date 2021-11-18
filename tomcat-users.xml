@@ -1,0 +1,4 @@
+<tomcat-users>
+	<user username="hbc" password="hbc" roles="manager-script"/>
+</tomcat-users>
+

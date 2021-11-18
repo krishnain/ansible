@@ -1,0 +1,6 @@
+---
+- name: Edit the index.html file of apahce2
+  copy:
+   content: "Welcome to HBC"
+   dest: /var/www/html/index.html
+...

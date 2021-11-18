@@ -1,0 +1,12 @@
+---
+- name: Create users uSing host scope varibales
+  hosts: 172.31.91.140
+  tasks:
+   - name: Create user
+     user:
+      name: "{{a}}"
+      password: "{{b}}"
+      home: "{{c}}"
+      comment: "{{d}}"
+      shell: "{{e}}"
+

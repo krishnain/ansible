@@ -1,0 +1,13 @@
+---
+- name: Configuring tomcat usinf child playbooks
+  hosts: servers
+  tasks:
+   - name: Call child playbooks for tomcat
+     include: "{{item}}"
+     with_items:
+      - install_tomcat.yml  
+      - copy_tomcat_users.yml  
+      - replace_port.yml
+      - restart_tomcat.yml
+      - check_url_response_tomcat.yml
+

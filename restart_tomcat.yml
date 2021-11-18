@@ -1,0 +1,8 @@
+---
+- name: Restart tomcat9
+  service:
+   name: "{{a}}"
+   state: "{{i}}"
+- name: Pause for 1 min
+  pause:
+   minutes: "{{time}}"
